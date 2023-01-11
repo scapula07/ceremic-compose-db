@@ -1,0 +1,7 @@
+type Appointment @createModel(accountRelation: SINGLE, description: "A patient") {
+  appointmentId: DID! @documentAccount
+  doctorName: String! @string(minLength: 3, maxLength: 50)
+  patientName: String! @string(minLength: 3, maxLength: 50)
+  date: String! @string(minLength: 3, maxLength: 50)
+   
+}
